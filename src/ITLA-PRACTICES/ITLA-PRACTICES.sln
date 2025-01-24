@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapa de Clases", "Mapa de Clases\Mapa de Clases.csproj", "{D0DF62F5-5A16-4A7B-B3B5-D153BDF12A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapa_De_Clases", "Mapa_De_Clases\Mapa_De_Clases.csproj", "{729B59CD-58EA-47D1-AA18-FCA234088ABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0DF62F5-5A16-4A7B-B3B5-D153BDF12A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DF62F5-5A16-4A7B-B3B5-D153BDF12A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DF62F5-5A16-4A7B-B3B5-D153BDF12A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DF62F5-5A16-4A7B-B3B5-D153BDF12A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729B59CD-58EA-47D1-AA18-FCA234088ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729B59CD-58EA-47D1-AA18-FCA234088ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729B59CD-58EA-47D1-AA18-FCA234088ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729B59CD-58EA-47D1-AA18-FCA234088ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
