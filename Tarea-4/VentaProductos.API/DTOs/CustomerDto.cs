@@ -1,8 +1,8 @@
 ﻿namespace VentaProductos.API.DTOs
 {
-    public class ProductDto
+    public class CustomerDto
     {
         public required string Name { get; set; }
-        public decimal Price { get; set; }
+        public required string Email { get; set; }
     }
 }
