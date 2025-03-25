@@ -15,13 +15,13 @@ namespace VentaProductos.API.Controllers
             _context = context;
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet("GetAll/")]
         public IActionResult GetAll()
         {
             var result = _context.Customers.ToList();
-            return Ok(new { result });
+            return Ok(result);
         }
-        [HttpGet("Get{id}")]
+        [HttpGet("Get/{id}")]
         public IActionResult Get(int id)
         {
             var result = _context.Customers.Find(id);
@@ -29,9 +29,9 @@ namespace VentaProductos.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(new { result });
+            return Ok(result);
         }
-        [HttpDelete("Delete{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             var result = _context.Customers.Find(id);
@@ -43,7 +43,7 @@ namespace VentaProductos.API.Controllers
             _context.SaveChanges();
             return Ok(new { success = true, message = "Deleted succesfully!" });
         }
-        [HttpPost("Create")]
+        [HttpPost("Create/")]
         public IActionResult Create(CustomerDto dto)
         {
             var customer = new Customer
@@ -55,7 +55,7 @@ namespace VentaProductos.API.Controllers
             _context.SaveChanges();
             return Ok(new { success = true, message = "Created succesfully!" });
         }
-        [HttpPut("Update{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult Update(int id, CustomerDto dto)
         {
             var customer = _context.Customers.Find(id);

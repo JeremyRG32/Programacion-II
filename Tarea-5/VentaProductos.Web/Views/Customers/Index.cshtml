@@ -1,0 +1,29 @@
+﻿@model List<CustomerViewModel>
+
+<h1>Customers</h1>
+<a asp-action="Create" class="btn btn-success">Add Customer</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@c.Id" class="btn btn-primary mx-0">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@c.Id" class="btn btn-danger mx-0">Delete</a>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

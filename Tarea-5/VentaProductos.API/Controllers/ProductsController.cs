@@ -19,7 +19,7 @@ namespace VentaProductos.API.Controllers
         public IActionResult GetAll()
         {
             var result = _context.Products.ToList();
-            return Ok(new { result });
+            return Ok(result);
         }
         [HttpGet("/Get{id}")]
         public IActionResult Get(int id)
@@ -29,7 +29,7 @@ namespace VentaProductos.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(new { result });
+            return Ok(result);
         }
         [HttpDelete("/Delete{id}")]
         public IActionResult Delete(int id)
